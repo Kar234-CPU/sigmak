@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sigmak</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+            color: #fff;
+            font-family: 'Orbitron', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            font-size: 4rem;
+            letter-spacing: 0.2em;
+            background: linear-gradient(90deg, #00c6ff, #0072ff, #00c6ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            animation: gradientMove 3s infinite linear;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            text-shadow: 0 4px 32px #00c6ff44;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            color: #b2fefa;
+            margin-bottom: 2em;
+            text-shadow: 0 2px 8px #0072ff44;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 2em 3em;
+            box-shadow: 0 8px 32px 0 #0072ff33;
+            max-width: 400px;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .btn {
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 0.75em 2em;
+            font-size: 1.1rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: background 0.3s;
+            box-shadow: 0 2px 8px #00c6ff44;
+            margin-top: 1em;
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #0072ff, #00c6ff);
+        }
+        footer {
+            margin-top: auto;
+            color: #b2fefa99;
+            font-size: 1rem;
+            padding: 1em 0;
+            letter-spacing: 0.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">SIGMAK</div>
+    <div class="subtitle">Unleash Your Inner Sigma</div>
+    <div class="card">
+        <p>Welcome to Sigmak, the ultimate hub for modern alphas and innovators.<br>
+        Join our community, share your ideas, and level up your mindset.</p>
+        <button class="btn" onclick="alert('Coming soon!')">Join Now</button>
+    </div>
+    <footer>
+        &copy; 2025 Sigmak. Fran. All rights reserved.
+    </footer>
+</body>
+</html>
